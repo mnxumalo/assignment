@@ -1,0 +1,7 @@
+Used Spring Data JPA to expose CRUD services to manage the database.
+Used the Dijkstra’s shortest path algorithm to calculate the shortest path. This was exposed as a spring service for re-use.
+The algorithm was injected in the Webservice endpoint and Home controller. Thymeleaf UI uses the controller to get the shortest path.
+The algorith can also be called from the exposed soap web service.
+The design approach I took was to implement a spring web mvc application using controllers, services and repository.
+In this approach, you have separation of concerns, achieve loose coupling through dependency injection.
+You achieve high cohesion in your classes as they tend to one specific task. This improves maintainability of the application.
