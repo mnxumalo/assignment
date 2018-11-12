@@ -55,7 +55,7 @@ public class ShortestPathServiceImpl implements ShortestPathService{
 		}
 		 	Graph graph = new Graph(vertexList, edges);
 	        DijkstraAlgorithm dijkstra = new DijkstraAlgorithm(graph);
-	        dijkstra.execute(nodes.get("A"));
+	        dijkstra.buildPath(nodes.get("A"));
 	        LinkedList<Vertex> path = dijkstra.getPath(nodes.get(destinationNode));
 	        return path;
 	}

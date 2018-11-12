@@ -4,7 +4,7 @@ public class Vertex {
 
 	private String id;
 	private String name;
-	
+	private float distance = Float.MAX_VALUE;
 	
 	
 	public Vertex(String id, String name) {
@@ -23,6 +23,14 @@ public class Vertex {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	
+	public float getDistance() {
+		return distance;
+	}
+	public void setDistance(float distance) {
+		this.distance = distance;
 	}
 	@Override
 	public String toString() {
